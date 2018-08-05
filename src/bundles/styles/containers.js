@@ -1,4 +1,4 @@
-const styles = StyleSheet.create({
+const containers = StyleSheet.create({
     container: {
         justifyContent: 'center',
         marginTop: 50,
@@ -18,5 +18,10 @@ const styles = StyleSheet.create({
         shadowColor: '#CCC',
         shadowOpacity: 1.0,
         shadowRadius: 1
+    },
+    contactContainer: {
+        flex: 1,
+        backgroundColor: '#F5FCFF',
     }
 });
+export default containers;

@@ -1,25 +1,46 @@
 const text = StyleSheet.create({
-    p: {
-        color: 'black',
-        fontFamily: 'Open Sans',
-        fontSize: 14,
-    },
-    title: {
+firstName: {
+        paddingLeft: 10,
+        paddingTop: 5,
+        fontSize: 16,
         fontWeight: 'bold',
-        color: 'black',
         fontFamily: 'Open Sans',
-        fontSize: 20,
+        color: '#777'
     },
-    subTitle: {
+    lastName: {
+        paddingLeft: 10,
+        paddingTop: 5,
+        fontSize: 16,
         fontWeight: 'bold',
-        color: 'black',
         fontFamily: 'Open Sans',
-        fontSize: 14,
+        color: '#777'
     },
-    data: {
-        color: 'black',
+    email: {
+        paddingLeft: 10,
+        paddingTop: 5,
+        fontSize: 16,
+        fontWeight: 'bold',
         fontFamily: 'Open Sans',
-        fontSize: 25,
+        color: 'blue'
+    },
+title: {
+        paddingLeft: 10,
+        paddingTop: 5,
+        fontSize: 16,
+        fontWeight: 'bold',
+        fontFamily: 'Open Sans',
+        color: '#777'
+    },
+    description: {
+        paddingLeft: 10,
+        marginTop: 5,
+        fontSize: 14,
+        color: '#777'
+    },
+   
+    rowText: {
+        flex: 4,
+        flexDirection: 'column'
     },
 
 });

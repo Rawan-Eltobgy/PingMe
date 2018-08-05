@@ -35,7 +35,7 @@ const options = {
 export  class FormScreen extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <View style={styles.containers.container}>
                 <Form 
                 ref={refrence => this._form = refrence} // assign a ref
                 options={options}
