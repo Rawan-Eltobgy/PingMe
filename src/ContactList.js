@@ -22,8 +22,12 @@ export default class ContactList extends Component {
                 }
             ]
         }
-    }}
+    }
+
+    _keyExtractor = (item, email) => item.email;
+
     _renderItem = ({ item }) => (
+         // return a component using that data
         <ContactItem
             firstname={item.id}
             lastname={item.title}
@@ -33,7 +37,6 @@ export default class ContactList extends Component {
         />
    } );
 
-    _keyExtractor = (item, email) => item.email;
 
     render() {
         return (
@@ -49,5 +52,5 @@ export default class ContactList extends Component {
             </View>
         );
     }
-
+}
 
