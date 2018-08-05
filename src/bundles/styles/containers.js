@@ -1,4 +1,6 @@
-const containers = StyleSheet.create({
+
+import { StyleSheet } from 'react-native';
+export  const containers = StyleSheet.create({
     container: {
         justifyContent: 'center',
         marginTop: 50,

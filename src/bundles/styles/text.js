@@ -1,4 +1,5 @@
-const text = StyleSheet.create({
+import { StyleSheet } from 'react-native';
+export const text = StyleSheet.create({
 firstName: {
         paddingLeft: 10,
         paddingTop: 5,
