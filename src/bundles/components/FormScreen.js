@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import t from 'tcomb-form-native';
 
-const FormScreen = t.form.Form;
+//const FormScreen = t.form.Form;
 //First Name, Last Name, Email, Subject, Description
 const User = t.struct({
     firstname: t.String,
