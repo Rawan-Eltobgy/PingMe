@@ -5,7 +5,7 @@ import {
     FlatList,
     Text, View
 } from 'react-native';
-
+import axios from 'axios';
 import ContactItem from './src/models/ContactItem';
 import containers from './src/bundles/styles/containers';
 export default class ContactList extends Component {
@@ -37,7 +37,15 @@ export default class ContactList extends Component {
         />
    } );
 
-
+   //fetching data from the ruby api.
+componentDidMount() {
+    axios.get('http://localhost:3001/api/v1/ideas.json')
+        .then(response => {
+            console.log(response)
+            this.setState({ ideas: response.data })
+        })
+        .catch(error => console.log(error))
+}
     render() {
         return (
             <View style={styles.containers.contactContainer}>
