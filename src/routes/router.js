@@ -3,12 +3,13 @@ import { Dimensions, Platform } from 'react-native';
 import { StackNavigator, TabNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import FormScreen from './src/bundles/components/FormScreen';
-import ListScreen from './src/bundles/components/ListScreen';
+import FormScreen from './src/bundles/screens/FormScreen';
+import ListScreen from './src/bundles/screens/ListScreen';
 
 let screen = Dimensions.get('window');
 
 export const Tabs = TabNavigator({
+   
     'FormScreen': {
         screen: FormScreen,
         navigationOptions: {

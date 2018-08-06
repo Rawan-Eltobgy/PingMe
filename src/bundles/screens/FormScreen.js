@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import t from 'tcomb-form-native';
 
-//const FormScreen = t.form.Form;
+const Form = t.form.Form;
 //First Name, Last Name, Email, Subject, Description
 const User = t.struct({
     firstname: t.String,
@@ -32,7 +32,7 @@ const options = {
         },
     },
 };
-export  class FormScreen extends Component {
+export default class FormScreen extends Component {
     render() {
         return (
             <View style={styles.containers.container}>
@@ -50,4 +50,4 @@ export  class FormScreen extends Component {
 }
 //one default
 
-AppRegistry.registerComponent(appName, () => App);
+

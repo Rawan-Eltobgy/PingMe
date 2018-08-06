@@ -29,10 +29,10 @@ export default class ContactList extends Component {
     _renderItem = ({ item }) => (
          // return a component using that data
         <ContactItem
-            firstname={item.id}
-            lastname={item.title}
-            email={item.author}
-            title={item.thumbnail}
+            firstname={item.firstname}
+            lastname={item.lastname}
+            email={item.email}
+            title={item.title}
             description={item.description}
         />
    } );
