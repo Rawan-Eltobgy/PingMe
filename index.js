@@ -1,8 +1,5 @@
-import {AppRegistry} from 'react-native';
-import {name as appName} from './app.json';
-import FormScreen  from './src/bundles/screens/FormScreen';
-
-//Creating a component
-const App = () =>{};
+import { AppRegistry } from 'react-native';
+import App from './App';
+import { name as appName } from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);

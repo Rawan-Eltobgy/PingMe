@@ -45,7 +45,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-    <NavigationScreen />);
+    <Text>"hey there"</Text>);
   }
 }
 
