@@ -38,16 +38,16 @@ export const NavigationScreen = () => {
       headerMode: "none",
       mode: "modal"
     }
-  );
+  )
 };
 
-export default class App extends React.Component {
+ class App extends React.Component {
 
   render() {
     return (
      <NavigationScreen/>);
   }
 }
-
+export default App;
 
 
