@@ -5,25 +5,25 @@ import { Icon } from 'react-native-elements';
 import FormScreen from './src/bundles/screens/FormScreen';
 import ListScreen from './src/bundles/screens/ListScreen';
 
-let screen = Dimensions.get('window'); 
+let screen = Dimensions.get('window');
 
-const Tabs = TabNavigator({
+export const Tabs = TabNavigator({
   'FormScreen': {
     screen: FormScreen,
     navigationOptions: {
       tabBarLabel: 'Contact Us',
       tabBarIcon: ({ tintColor }) => <Icon name="ios-contact" type="entypo" size={28} color={tintColor} />
-    },
+    }
   },
   'ListScreen': {
     screen: ListScreen,
     navigationOptions: {
       tabBarLabel: 'Contact List',
       tabBarIcon: ({ tintColor }) => <Icon name="list" type="entypo" size={28} color={tintColor} />
-    },
-  },
+    }
+  }
 });
-const NavigationScreen = createRootNavigator = () => {
+export const NavigationScreen = () => {
   return StackNavigator(
     {
 
@@ -45,7 +45,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-    <Text>"hey there"</Text>);
+     <NavigationScreen/>);
   }
 }
+
+
 
