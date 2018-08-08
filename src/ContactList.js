@@ -6,8 +6,8 @@ import {
     Text, View
 } from 'react-native';
 import axios from 'axios';
-import ContactItem from './src/models/ContactItem';
-import containers from './src/bundles/styles/containers';
+import ContactItem from './models/ContactItem';
+import {containers} from './bundles/styles/containers';
 export default class ContactList extends Component {
     constructor(props) {
         super(props);
