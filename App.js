@@ -23,10 +23,7 @@ export const Tabs = TabNavigator({
     }
   }
 });
-export const NavigationScreen = () => {
-  return StackNavigator(
-    {
-
+export const NavigationScreen = StackNavigator({
       Tabs: {
         screen: Tabs,
         navigationOptions: {
@@ -37,15 +34,18 @@ export const NavigationScreen = () => {
     {
       headerMode: "none",
       mode: "modal"
-    }
-  )
-};
+    });
+
 
  class App extends React.Component {
 
   render() {
     return (
-     <NavigationScreen/>);
+      //TODO import the header.
+      <View>
+      
+     <NavigationScreen/>
+     </View>);
   }
 }
 export default App;

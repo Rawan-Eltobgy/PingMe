@@ -1,6 +1,6 @@
 import { AppRegistry, View, StyleSheet } from 'react-native';
 import React, { Component } from 'react';
-
+import { containers } from './styles/containers';
 import t from 'tcomb-form-native';
 
 const Form = t.form.Form;
